@@ -10,6 +10,20 @@ import UIKit
 
 class TestRavenStoryController: UIViewController {
 
+    @IBAction func btnStartRaven(_ sender: UIButton) {
+        
+        if CheckInternet.Connection() {
+            performSegue(withIdentifier: "ravenTest", sender: self)
+        } else {
+            let alert = UIAlertController(title: "BRAK POŁĄCZENIA Z INTERNETEM!", message: "Aby rozpocząć test musisz mieć dostęp do Internetu", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default){
+                _ in
+                return
+            })
+            present(alert, animated: true, completion: nil)
+        }
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
