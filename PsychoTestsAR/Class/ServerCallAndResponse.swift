@@ -10,18 +10,15 @@ import Foundation
 import UIKit
 
 class ServerAction {
-            let AppleID: String = (UIDevice.current.identifierForVendor?.uuidString)!
+    let AppleID: String = (UIDevice.current.identifierForVendor?.uuidString)!
     internal let urlIQ: String = "http://psychotests.pl/iPhone/?data=testjson"
-    internal let urlRaven: String = "http://psychotests.pl/iPhone/?data=ravenjson"
     internal let urlUPDATE: String = "http://psychotests.pl/iPhone/?data=addtest"
     internal let urlUSERTESTS: String = "http://psychotests.pl/iPhone/?data=showmytests"
     internal let urlDELETECURRENTROW: String = "http://psychotests.pl/iPhone/?data=deletetest"
     
-    
-    
-    // Metoda pobiera z adresu URL testy IQ (JSON) i tworzy 3 tablice [String]: 1 - pytania, 2 - odpowiedzi, 3 - wartości odpowiedźi
+    // Metoda pobiera z adresu URL testy IQ (JSON) i tworzy 3 tablice [Sreing]: 1 - pytania, 2 - odpowiedzi, 3 - wartości odpowiedźi
     func dataIQTests () {
-       let url_string = self.urlIQ
+        let url_string = self.urlIQ
         guard let url = URL (string: url_string) else {return}
         URLSession.shared.dataTask(with: url) {(data, response, error) in
             if error != nil {
@@ -48,14 +45,8 @@ class ServerAction {
             } catch let jsonError {
                 print (jsonError)
             }
-        }.resume()
+            }.resume()
     }
-    
-    //Metoda pobiera z adresu URL obrazki do testu raven (JSON), co tworzy ... jeszcze nie wiem
-    func dataRavenTest() {
-
-    }
-    
     
     // M: Upload User Apple ID (device) and tests results
     // -----------------------------------------------------------------------
@@ -148,7 +139,7 @@ class ServerAction {
                 mimeType == "application/json",
                 let data = data,
                 let dataString = String(data: data, encoding: .utf8) {
-
+                
                 // JSON SERVER RESPONSE
                 struct ServerResp: Codable {
                     var output: String

@@ -10,6 +10,20 @@ import UIKit
 
 class PsychoTestSelectorController: UIViewController {
 
+    @IBAction func buttonTestIQ(_ sender: UIButton) {
+        if CheckInternet.Connection() {
+            performSegue(withIdentifier: "startIQTest", sender: self)
+        } else {
+            let alert = UIAlertController(title: "BRAK POŁĄCZENIA Z INTERNETEM!", message: "Aby wykonać test musisz mieć dostęp do Internetu", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default){
+                _ in
+                return
+            })
+            present(alert, animated: true, completion: nil)
+        }
+    }
+    
+    
     @IBAction func allTestRaven(_ sender: UIButton) {
         
         if CheckInternet.Connection() {
@@ -27,10 +41,24 @@ class PsychoTestSelectorController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let serwerAction = ServerAction()
+        serwerAction.ShowMyTests()
         // Do any additional setup after loading the view.
     }
     
-
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
+    override var shouldAutorotate: Bool {
+        if UIDevice.current.orientation.isLandscape == false {
+            return true
+        }
+        else {
+            return false
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

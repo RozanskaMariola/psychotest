@@ -31,9 +31,9 @@ class TestRavenBadAnswerViewController: UIViewController {
 
          nrQuestionBad = userDataTests.array(forKey: "nrQuestBadAnserList") as? [Int] ?? [Int]()
          badAnswer = userDataTests.array(forKey:"badAnserList") as? [Int] ?? [Int]()
-         nrQuestionRandom = userDataTests.array(forKey: "nrQuestionRandom") as? [Int] ?? [Int]()
+         nrQuestionRandom = userDataTests.array(forKey: "nrQuestRadomList") as? [Int] ?? [Int]()
         
-        print(nrQuestionBad[0])
+     //   print(nrQuestionRandom)
         nextQuestion()
         // Do any additional setup after loading the view.
     }
@@ -47,7 +47,7 @@ class TestRavenBadAnswerViewController: UIViewController {
         
         if questionNumber < nrQuestionBad.count {
             
-         //    progressLabel.text = "Pytanie \(nrQuestionRandom[questionNumber]) / 10"
+            progressLabel.text = "Pytanie: \(nrQuestionRandom[questionNumber]+1) / 20"
             print(nrQuestionRandom)
             
             questionImage.image = UIImage(named: "raven/test-de-raven-\(String(nrQuestionBad[questionNumber]))_bg")

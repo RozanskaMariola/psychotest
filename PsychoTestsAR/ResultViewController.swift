@@ -19,6 +19,8 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var saveResult: UIButton!
     @IBOutlet weak var serverInfoLabel: UILabel!
+    @IBOutlet weak var badResultsButton: UIButton!
+    @IBOutlet weak var explainLabel: UILabel!
     
     
     @IBAction func backMainController(_ sender: UIButton) {
@@ -57,7 +59,15 @@ class ResultViewController: UIViewController {
         
         let score = userDataTests.integer(forKey: "scoreResult")
         
-        resultLabel.text = "\(score) iq"
+        resultLabel.text = "PRAWIDŁOWYCH ODP.: \(score)/20"
+        
+          let nrTest = userDataTests.integer(forKey: "nrTest")
+        if nrTest == 1 {
+            badResultsButton.isHidden = true
+            explainLabel.isHidden = true
+            resultLabel.text = "PRAWIDŁOWYCH ODP.: \(score)/10"
+            
+        }
         
      //   let nrQuestionBad = userDataTests.array(forKey: "nrQuestBadAnserList")
        // let badAnswer = userDataTests.array(forKey:"badAnserList")

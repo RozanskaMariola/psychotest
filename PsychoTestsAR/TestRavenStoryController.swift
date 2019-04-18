@@ -30,6 +30,18 @@ class TestRavenStoryController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
+    override var shouldAutorotate: Bool {
+        if UIDevice.current.orientation.isLandscape == false {
+            return true
+        }
+        else {
+            return false
+        }
+    }
 
     /*
     // MARK: - Navigation

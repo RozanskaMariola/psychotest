@@ -179,7 +179,8 @@ class TestRavenController: UIViewController {
         userSave.set(3, forKey: "nrTest")
         userSave.set(nrQuestBadAnswer, forKey: "nrQuestBadAnserList")
         userSave.set(badAnswer, forKey: "badAnserList")
-        userSave.set(nrQuestionRadom, forKey: "nrQuestionRadomList")
+        userSave.set(nrQuestionRadom, forKey: "nrQuestRadomList")
+        print(nrQuestionRadom)
         performSegue(withIdentifier: "resultTest", sender: self)
     }
     
