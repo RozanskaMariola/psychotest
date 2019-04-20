@@ -18,8 +18,7 @@ class TestIQController: UIViewController {
     var pickedAnser: Int = 0
     
     // Timer
-    var countdownTimer: Timer! = nil
-    var totalTime = 20 // Zmienna określająca czas na odpowieź w danym pytaniu
+    let time_limit: Int = 20
     
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
@@ -45,10 +44,8 @@ class TestIQController: UIViewController {
         arrayAnswer = user_data_tests.array(forKey: "answers") as? [String] ?? [String]()
         arrayValue = user_data_tests.array(forKey: "values") as? [String] ?? [String]()
         
-        print(arrayValue)
-        
         nextQuestion()
-        startTimer()
+    //    startTimer()
        
     }
   
@@ -59,8 +56,11 @@ class TestIQController: UIViewController {
         
         checkAnswer()
         questionNumber = questionNumber + 1
+        print("answerPressed \(questionNumber)")
+    //    endTimer()
+    //    startTimer()
         nextQuestion()
-        startTimer()
+
     }
     
     
@@ -77,6 +77,9 @@ class TestIQController: UIViewController {
         
         if questionNumber  < 10{
             
+            StopTimmerTestIQ ()
+            StartTimmerTestIQ(time_limit: 20, output: timerLabel)
+            
              questionLabel.text = arrayQuestion[questionNumber]
             //wyszukanie wlasciwych odpowiedzi do pytania w tablicy
             let answerNumber = questionNumber * 3
@@ -86,10 +89,11 @@ class TestIQController: UIViewController {
             
             updateUI()
             
-        }else{
+        }
+        else{
             SaveResultAndGoToNextVC()
           }
-        
+     
     }
     
     func checkAnswer() {
@@ -106,56 +110,49 @@ class TestIQController: UIViewController {
         }
     }
     
-    func startTimer() {
-        totalTime = 20
-        countdownTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
+    // Kod timera ---------------------------------------------
+    var timmerTest: Timer? = nil
+    
+    
+    func StopTimmerTestIQ () {
+        timmerTest?.invalidate()
+        timmerTest = nil
     }
     
-    @objc func updateTime() {
-        timerLabel.text = "\(timeFormatted(totalTime))"
-        
-        if totalTime != 0 {
-            totalTime -= 1
-        } else {
-            endTimer()
+    func StartTimmerTestIQ (time_limit: Int, output: UILabel) -> Void {
+        var countStart = time_limit
+        output.text = String (countStart)
+        timmerTest = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: {
+            timmer in
+            countStart -= 1
+            output.text = String (countStart)
             
-        }
+            if countStart == 0 {
+                timmer.invalidate()
+                
+                    if self.questionNumber >= 9 {
+                        self.SaveResultAndGoToNextVC()
+                        self.StopTimmerTestIQ()
+                        print("wyjscie z formatki")
+                    }
+                    else{
+                        self.questionNumber += 1
+                        print("starTimmer \(self.questionNumber)")
+                        self.nextQuestion()
+                    }
+            }
+        })
     }
     
-    func endTimer() {
-        //wlacz wibracje
-        AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
-        
-        countdownTimer?.invalidate()
-        countdownTimer = nil
-        
-        if(questionNumber<10){
-            questionNumber = questionNumber + 1
-            startTimer()
-            nextQuestion()
-        }else{
-                //przenies na formatke z wynikami
-                SaveResultAndGoToNextVC()
-        }
-    }
+    // --------------------------------------------------------------
     
-    func timeFormatted(_ totalSeconds: Int) -> String {
-        let seconds: Int = totalSeconds % 60
-        let minutes: Int = (totalSeconds / 60) % 60
-        //     let hours: Int = totalSeconds / 3600
-        return String(format: "%02d:%02d", minutes, seconds)
-    }
-    
+
     
     //przeniesienie wyniku testu na formatke resultTest
     func SaveResultAndGoToNextVC () -> Void {
         let userSave = UserDefaults.standard
         userSave.set(pointsResult, forKey: "scoreResult")
         userSave.set(1, forKey: "nrTest")
-     //   userSave.set(nrQuestBadAnswer, forKey: "nrQuestBadAnserList")
-    //    userSave.set(badAnswer, forKey: "badAnserList")
-   //     userSave.set(nrQuestionRadom, forKey: "nrQuestRadomList")
-    //    print(nrQuestionRadom)
         performSegue(withIdentifier: "resultTestIQ", sender: self)
     }
     

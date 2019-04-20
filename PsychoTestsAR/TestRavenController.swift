@@ -54,12 +54,8 @@ class TestRavenController: UIViewController {
     
     func updateUI() {
         
-      //  scoreLabel.text = "Score: \(score)"
         progressLabel.text = "Pytanie \(questionNumber + 1) / 20"
-      //   progressBar.frame.size.width = (view.frame.size.width / 10) * CGFloat(questionNumber + 1)
-   //     progressBar.frame = CGRect(x: 0 , y: 0, width: self.view.frame.width, height: self.view.frame.height * 0.7)
-   //     print(progressBar.frame.size.width)
-       // print((view.frame.size.width / 10) * CGFloat(questionNumber + 1))
+
     }
     
     

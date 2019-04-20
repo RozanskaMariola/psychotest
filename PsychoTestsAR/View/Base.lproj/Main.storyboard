@@ -159,13 +159,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test został przgotowany aby sprawdzić twój poziom IQ. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="SSW-0N-2wc">
-                                <rect key="frame" x="16" y="146" width="304" height="40.5"/>
+                                <rect key="frame" x="16" y="146" width="304" height="77"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test składa się z 20 pytań." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="aUh-lU-evZ">
-                                <rect key="frame" x="16" y="180.5" width="304" height="31"/>
+                                <rect key="frame" x="16" y="217" width="304" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="vCf-mc-wr8"/>
                                 </constraints>
@@ -174,7 +174,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pytania losowane są z puli 60." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IDR-wH-Beb">
-                                <rect key="frame" x="17" y="204.5" width="304" height="31"/>
+                                <rect key="frame" x="17" y="241" width="304" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="aef-Gq-JIT"/>
                                 </constraints>
@@ -183,7 +183,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Czas testu wynosi 5 minut" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="TGw-oW-lSl">
-                                <rect key="frame" x="17" y="243.5" width="304" height="31"/>
+                                <rect key="frame" x="17" y="280" width="304" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="vZB-ow-LYq"/>
                                 </constraints>
@@ -192,7 +192,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jeśli odpowiesz na pytanie, nie masz możliwości powrotu i poprawy." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LPe-bE-lIT">
-                                <rect key="frame" x="16" y="282.5" width="304" height="44"/>
+                                <rect key="frame" x="16" y="319" width="304" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="h9i-YD-8XL"/>
                                 </constraints>
@@ -201,7 +201,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="so4-rG-nyn">
-                                <rect key="frame" x="120" y="554.5" width="136" height="56"/>
+                                <rect key="frame" x="120" y="591" width="136" height="56"/>
                                 <color key="backgroundColor" red="0.25490196078431371" green="0.63921568627450975" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="QZ9-Ja-1ew"/>
@@ -812,63 +812,52 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Test został przgotowany aby sprawdzić twój poziom IQ. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wCO-WO-uQF">
-                                <rect key="frame" x="16" y="177" width="343" height="164"/>
+                                <rect key="frame" x="16" y="232" width="343" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="tOs-Mr-mdy"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Test składa się z 10 pytań." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7tE-6z-0Qv">
-                                <rect key="frame" x="16" y="335" width="343" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="AaB-y9-O3x"/>
-                                </constraints>
+                                <rect key="frame" x="16" y="321" width="343" height="31"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Pytania losowane są z puli 60." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zJo-Ug-Tk5">
-                                <rect key="frame" x="17" y="359" width="273" height="31"/>
+                                <rect key="frame" x="17" y="345" width="273" height="31"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="FAE-jA-LuP"/>
+                                    <constraint firstAttribute="height" constant="31" id="jlu-Qr-yfS"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Czas odpowiedzi na pytanie wynoosi 20 sek." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="yUP-5t-Xbg">
-                                <rect key="frame" x="17" y="398" width="342" height="31"/>
+                                <rect key="frame" x="17" y="399" width="342" height="31"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="Vt6-WF-4m9"/>
+                                    <constraint firstAttribute="height" constant="31" id="Fws-3a-jRT"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="sBp-Ep-tiL">
-                                <rect key="frame" x="16" y="437" width="343" height="132"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="132" id="LF3-Yf-OFJ"/>
-                                </constraints>
-                                <string key="text">Jeśli odpowiesz na pytanie, nie masz możliwości powrotu i poprawy. 
-Po upływie czasu, zostaniesz przeniesiony do następnego pytania.</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Test IQ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uxq-mg-fPL">
-                                <rect key="frame" x="16" y="123" width="343" height="32"/>
+                                <rect key="frame" x="125" y="123" width="124" height="32"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="jqY-sz-d3y"/>
+                                    <constraint firstAttribute="height" constant="32" id="mii-pC-DRn"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="42S-b5-6Ju">
-                                <rect key="frame" x="83" y="588" width="186" height="59"/>
+                                <rect key="frame" x="83" y="574" width="186" height="59"/>
                                 <color key="backgroundColor" red="0.25490196079999999" green="0.63921568630000003" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="59" id="0lt-0g-f1a"/>
+                                    <constraint firstAttribute="height" constant="59" id="TLE-M9-VTe"/>
                                 </constraints>
                                 <state key="normal" title="Start">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -878,30 +867,39 @@ Po upływie czasu, zostaniesz przeniesiony do następnego pytania.</string>
                                     <segue destination="bEA-X8-iOM" kind="presentation" identifier="testIQ" id="9Rj-pr-fIp"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="sBp-Ep-tiL">
+                                <rect key="frame" x="17" y="409" width="342" height="133"/>
+                                <string key="text">Jeśli odpowiesz na pytanie, nie masz możliwości powrotu i poprawy. 
+Po upływie czasu, zostaniesz przeniesiony do następnego pytania.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.11672686188604409" green="0.7802949896642466" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="uxq-mg-fPL" firstAttribute="leading" secondItem="wCO-WO-uQF" secondAttribute="leading" id="E5r-7Y-dwc"/>
-                            <constraint firstItem="uxq-mg-fPL" firstAttribute="trailing" secondItem="wCO-WO-uQF" secondAttribute="trailing" id="FlY-Lo-RQ1"/>
-                            <constraint firstItem="7tE-6z-0Qv" firstAttribute="leading" secondItem="sBp-Ep-tiL" secondAttribute="leading" id="IAW-ym-JvL"/>
-                            <constraint firstItem="sBp-Ep-tiL" firstAttribute="top" secondItem="yUP-5t-Xbg" secondAttribute="bottom" constant="8" symbolic="YES" id="L3o-gW-F1C"/>
-                            <constraint firstItem="wCO-WO-uQF" firstAttribute="leading" secondItem="7tE-6z-0Qv" secondAttribute="leading" id="LRy-fD-b6J"/>
-                            <constraint firstItem="uxq-mg-fPL" firstAttribute="top" secondItem="2Z0-pd-AIl" secondAttribute="top" constant="103" id="NaE-5O-Ng5"/>
-                            <constraint firstItem="2Z0-pd-AIl" firstAttribute="trailing" secondItem="zJo-Ug-Tk5" secondAttribute="trailing" constant="85" id="QYw-ES-SJ6"/>
-                            <constraint firstItem="7tE-6z-0Qv" firstAttribute="trailing" secondItem="yUP-5t-Xbg" secondAttribute="trailing" id="TPB-mc-fnV"/>
-                            <constraint firstItem="zJo-Ug-Tk5" firstAttribute="leading" secondItem="yUP-5t-Xbg" secondAttribute="leading" id="Wxz-OR-woM"/>
-                            <constraint firstItem="yUP-5t-Xbg" firstAttribute="top" secondItem="zJo-Ug-Tk5" secondAttribute="bottom" constant="8" symbolic="YES" id="c9q-v8-2VR"/>
-                            <constraint firstItem="yUP-5t-Xbg" firstAttribute="top" secondItem="7tE-6z-0Qv" secondAttribute="bottom" constant="32" id="fRn-gW-E7i"/>
-                            <constraint firstItem="yUP-5t-Xbg" firstAttribute="trailing" secondItem="sBp-Ep-tiL" secondAttribute="trailing" id="gli-Yn-z5i"/>
-                            <constraint firstItem="wCO-WO-uQF" firstAttribute="top" secondItem="uxq-mg-fPL" secondAttribute="bottom" constant="22" id="l5S-v7-10m"/>
-                            <constraint firstItem="uxq-mg-fPL" firstAttribute="leading" secondItem="OJC-IV-fqr" secondAttribute="leadingMargin" id="mUn-eQ-usM"/>
-                            <constraint firstAttribute="bottom" secondItem="42S-b5-6Ju" secondAttribute="bottom" constant="20" symbolic="YES" id="rFY-S3-z4E"/>
-                            <constraint firstItem="42S-b5-6Ju" firstAttribute="top" secondItem="sBp-Ep-tiL" secondAttribute="bottom" constant="19" id="rSe-CQ-jqY"/>
-                            <constraint firstItem="zJo-Ug-Tk5" firstAttribute="top" secondItem="wCO-WO-uQF" secondAttribute="bottom" constant="18" id="tGQ-Yl-oJe"/>
-                            <constraint firstItem="7tE-6z-0Qv" firstAttribute="centerX" secondItem="yUP-5t-Xbg" secondAttribute="centerX" id="tPW-Qc-DyW"/>
-                            <constraint firstItem="42S-b5-6Ju" firstAttribute="leading" secondItem="2Z0-pd-AIl" secondAttribute="leading" constant="83" id="ukA-eU-qra"/>
-                            <constraint firstItem="wCO-WO-uQF" firstAttribute="trailing" secondItem="7tE-6z-0Qv" secondAttribute="trailing" id="wCB-Ss-HmC"/>
-                            <constraint firstItem="2Z0-pd-AIl" firstAttribute="trailing" secondItem="42S-b5-6Ju" secondAttribute="trailing" constant="106" id="yug-i2-7Jw"/>
+                            <constraint firstItem="uxq-mg-fPL" firstAttribute="top" secondItem="2Z0-pd-AIl" secondAttribute="top" constant="103" id="5dc-kA-7FV"/>
+                            <constraint firstItem="wCO-WO-uQF" firstAttribute="leading" secondItem="7tE-6z-0Qv" secondAttribute="leading" id="6aK-8K-ciz"/>
+                            <constraint firstItem="yUP-5t-Xbg" firstAttribute="trailing" secondItem="sBp-Ep-tiL" secondAttribute="trailing" id="7uL-OR-ynY"/>
+                            <constraint firstItem="wCO-WO-uQF" firstAttribute="top" secondItem="uxq-mg-fPL" secondAttribute="bottom" constant="77" id="8Zi-lA-ueq"/>
+                            <constraint firstItem="7tE-6z-0Qv" firstAttribute="centerX" secondItem="yUP-5t-Xbg" secondAttribute="centerX" id="Eb8-Fy-4mO"/>
+                            <constraint firstItem="yUP-5t-Xbg" firstAttribute="top" secondItem="7tE-6z-0Qv" secondAttribute="bottom" constant="47" id="EnY-U2-RsY"/>
+                            <constraint firstItem="wCO-WO-uQF" firstAttribute="trailing" secondItem="7tE-6z-0Qv" secondAttribute="trailing" id="Fbe-gL-WTl"/>
+                            <constraint firstItem="yUP-5t-Xbg" firstAttribute="top" secondItem="zJo-Ug-Tk5" secondAttribute="bottom" constant="23" id="GSZ-QW-dhb"/>
+                            <constraint firstItem="zJo-Ug-Tk5" firstAttribute="leading" secondItem="yUP-5t-Xbg" secondAttribute="leading" id="Ivz-yx-z8E"/>
+                            <constraint firstItem="uxq-mg-fPL" firstAttribute="leading" secondItem="2Z0-pd-AIl" secondAttribute="leading" constant="125" id="Ocu-G6-AMx"/>
+                            <constraint firstItem="7tE-6z-0Qv" firstAttribute="top" secondItem="wCO-WO-uQF" secondAttribute="bottom" constant="8" symbolic="YES" id="OjU-yZ-aGl"/>
+                            <constraint firstItem="7tE-6z-0Qv" firstAttribute="trailing" secondItem="yUP-5t-Xbg" secondAttribute="trailing" id="Rxi-3Y-LPt"/>
+                            <constraint firstItem="2Z0-pd-AIl" firstAttribute="bottom" secondItem="42S-b5-6Ju" secondAttribute="bottom" constant="34" id="YUX-yc-JFU"/>
+                            <constraint firstItem="42S-b5-6Ju" firstAttribute="top" secondItem="sBp-Ep-tiL" secondAttribute="bottom" constant="32" id="ZRO-jv-jS8"/>
+                            <constraint firstItem="sBp-Ep-tiL" firstAttribute="top" secondItem="zJo-Ug-Tk5" secondAttribute="bottom" constant="33" id="cFA-N0-D37"/>
+                            <constraint firstItem="42S-b5-6Ju" firstAttribute="leading" secondItem="2Z0-pd-AIl" secondAttribute="leading" constant="83" id="cVq-1Q-Ipp"/>
+                            <constraint firstItem="yUP-5t-Xbg" firstAttribute="leading" secondItem="sBp-Ep-tiL" secondAttribute="leading" id="e3E-0c-N1J"/>
+                            <constraint firstItem="2Z0-pd-AIl" firstAttribute="trailing" secondItem="zJo-Ug-Tk5" secondAttribute="trailing" constant="85" id="eaE-Ul-LLB"/>
+                            <constraint firstItem="zJo-Ug-Tk5" firstAttribute="top" secondItem="wCO-WO-uQF" secondAttribute="bottom" constant="32" id="gUn-is-pAk"/>
+                            <constraint firstItem="2Z0-pd-AIl" firstAttribute="trailing" secondItem="42S-b5-6Ju" secondAttribute="trailing" constant="106" id="iFp-5B-Lp8"/>
+                            <constraint firstItem="uxq-mg-fPL" firstAttribute="centerX" secondItem="wCO-WO-uQF" secondAttribute="centerX" id="iv2-W1-6Xd"/>
+                            <constraint firstItem="wCO-WO-uQF" firstAttribute="leading" secondItem="OJC-IV-fqr" secondAttribute="leadingMargin" id="jlV-1P-VFG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2Z0-pd-AIl"/>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -1081,7 +1079,7 @@ Po upływie czasu, zostaniesz przeniesiony do następnego pytania.</string>
         <scene sceneID="QLI-FT-5fx">
             <objects>
                 <viewController id="MMN-ip-KgG" customClass="ARController" customModule="PsychoTestsAR" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="eYW-Ch-8SP">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="eYW-Ch-8SP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -1113,7 +1111,7 @@ Po upływie czasu, zostaniesz przeniesiony do następnego pytania.</string>
                                 <color key="textColor" red="0.3615510971" green="1" blue="0.13503511430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iz2-Re-UuU">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iz2-Re-UuU">
                                 <rect key="frame" x="71" y="99" width="246" height="469"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="krP-0M-S7v">
@@ -1269,8 +1267,7 @@ Po upływie czasu, zostaniesz przeniesiony do następnego pytania.</string>
         <image name="stopwatch" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9Rj-pr-fIp"/>
-        <segue reference="yeB-cb-SJv"/>
+        <segue reference="dyy-d4-Rzu"/>
         <segue reference="9Bg-td-GOc"/>
     </inferredMetricsTieBreakers>
 </document>
